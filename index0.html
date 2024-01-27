@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoLab Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <h2>
+        CoLab Survey Form
+    </h2>
+
+    <form>
+        <div class="div">
+            <p>First Name</p>
+            <input type="text"  class="input"     placeholder="First Name"/>
+        </div>
+
+        <div class="div">
+            <p>Last Name</p>
+            <input type="text"  class="input"      placeholder="Last Name"/>
+        </div>
+
+        <div class="div">
+            <p>Email Address</p>
+            <input type="text" class="input"     placeholder="Email"/>
+        </div>
+
+
+
+
+
+        <div>
+            <p>How did you find out about coLab</p>
+            <input type="radio" name="q1" ><span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">From a friend</span><br>
+            <input type="radio" name="q1"><span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">From Instagram</span><br>
+            <input type="radio" name="q1"><span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">I saw a flyer</span><br>
+            <input type="radio" name="q1">  <span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">From a family member</span><br>
+        </div>
+
+
+        <button><a href="index2.html">Next</a></button>
+    </form>
+
+   
+    
+    <script>
+        function gradeQuiz() {
+            var score = 0;
+
+            // Check answers for each question
+            if (document.querySelector('input[name="q1"]:checked').value === "Paris") {
+                score++;
+            }
+            if (document.querySelector('input[name="q2"]:checked').value === "Mars") {
+                score++;
+            }
+            if (document.querySelector('input[name="q3"]:checked').value === "Shakespeare") {
+                score++;
+            }
+
+        }
+    </script>
+
+<!--<script src="index.js"></script>-->
+</body>
+</html>
